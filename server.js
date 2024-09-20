@@ -172,10 +172,10 @@ app.get("/api/contact/list", async (req, res) => {
   }
 });
 
-app.use(express.static(path.join(__dirname, "build"))); // Adjust the path as needed
+app.use(express.static(path.join(__dirname, "frontend/build"))); // Adjust the path as needed
 
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "build", "index.html"));
+  res.sendFile(path.join(__dirname, "frontend/build", "index.html"));
 });
 
 // Start the server
