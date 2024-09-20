@@ -10,7 +10,7 @@ const ContactList = () => {
     const fetchContacts = async () => {
       try {
         const response = await axios.get(
-          "http://100.20.92.101:5000/api/contact/list"
+          "https://exchange-sl8s.onrender.com/api/contact/list"
         ); // API URL to get contacts
         setContacts(response.data);
       } catch (error) {
