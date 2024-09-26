@@ -19,7 +19,7 @@ const ContactForm = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/contact", // Updated URL to localhost
+        "https://exchange-sl8s.onrender.com/api/contact", // Updated URL to localhost
         formData
       );
       setResponseMessage(response.data.message);
